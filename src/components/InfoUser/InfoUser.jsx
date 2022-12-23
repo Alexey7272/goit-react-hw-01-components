@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import css from './InfoUser.module.css'
+// import css from './InfoUser.module.css'
 
 export const InfoUser = ({ username, tag, location, avatar}) => {
     return (
