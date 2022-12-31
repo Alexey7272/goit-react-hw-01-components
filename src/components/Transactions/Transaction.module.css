@@ -1,0 +1,37 @@
+.transaction {
+    box-shadow: 2px 1px 1px gray;
+
+    overflow: hidden;
+    border-collapse: collapse;
+    border: solid 3px whitesmoke;
+
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+th {
+    background: rgb(13, 147, 243) ;
+    border-right: 1px solid aliceblue;
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-right: 1px solid rgb(212, 211, 211);
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+
+tr {
+    background: #fff;
+}
+
+/* tr:nth-child(2n) {
+    background: violet;
+} */

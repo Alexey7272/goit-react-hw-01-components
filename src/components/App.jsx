@@ -9,6 +9,10 @@ import {Data} from 'components/Data/Data.jsx'
 import FriendsListItem from './FriendsList/friends.json'
 import {FriendsList} from './FriendsList/FriendsList'
 
+// TASK 4
+import TransactionsList from './Transactions/transactions.json'
+import { Transaction } from './Transactions/Transaction'
+
 export const App = () => {
   return (
     <div>
@@ -26,6 +30,9 @@ export const App = () => {
       />
       <FriendsList
       friends={FriendsListItem}
+      />
+      <Transaction
+      transactions={TransactionsList}
       />
     </div>
   );
