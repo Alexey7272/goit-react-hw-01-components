@@ -1,17 +1,17 @@
 // TASK 1
-import userInfo from './InfoUser/user.json'
-import {InfoUser} from 'components/InfoUser/InfoUser'
+import userInfo from './Profile/user.json'
+import {InfoUser} from 'components/Profile/Profile'
 
 // TASK 2
-import {Data} from 'components/Data/Data.jsx'
+import {Data} from 'components/Statistics/Statistics.jsx'
 
 // TASK 3
-import FriendsListItem from './FriendsList/friends.json'
-import {FriendsList} from './FriendsList/FriendsList'
+import FriendsListItem from './FriendList/friends.json'
+import {FriendsList} from './FriendList/FriendList'
 
 // TASK 4
-import TransactionsList from './Transactions/transactions.json'
-import { Transaction } from './Transactions/Transaction'
+import TransactionsList from './TransactionHistory/transactions.json'
+import { Transaction } from './TransactionHistory/TransactionHistory'
 
 export const App = () => {
   return (
@@ -21,9 +21,7 @@ export const App = () => {
       tag={userInfo.tag}
       location={userInfo.location}
       avatar={userInfo.avatar}
-      followers={userInfo.stats.followers}
-      views={userInfo.stats.views}
-      likes={userInfo.stats.likes}
+      stats={userInfo.stats}
       />
       <Data
       title={'Upload stats'}
