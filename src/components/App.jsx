@@ -3,6 +3,7 @@ import userInfo from './Profile/user.json'
 import {InfoUser} from 'components/Profile/Profile'
 
 // TASK 2
+import data from './Statistics/data.json'
 import {Data} from 'components/Statistics/Statistics.jsx'
 
 // TASK 3
@@ -24,6 +25,7 @@ export const App = () => {
       stats={userInfo.stats}
       />
       <Data
+      stats={data}
       title={'Upload stats'}
       />
       <FriendsList
