@@ -1,3 +1,4 @@
+import { type } from '@testing-library/user-event/dist/type';
 import PropTypes from 'prop-types'
 import css from './TransactionHistory.module.css'
 
@@ -12,12 +13,12 @@ export const Transaction = ({ transactions }) => {
                 </tr>
             </thead>
             
-            {transactions.map(transaction =>
-                <tbody key={transaction.id}>
+            {transactions.map(({id, type, amount, currency }) =>
+                <tbody key={id}>
                     <tr>
-                      <td>{transaction.type}</td>
-                      <td>{transaction.amount}</td>
-                      <td>{transaction.currency}</td>
+                      <td>{type}</td>
+                      <td>{amount}</td>
+                      <td>{currency}</td>
                     </tr>
                 </tbody>
             )}
